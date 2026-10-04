@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koffiolivierhounkpe.onghlemi.org/sitemap.xml
