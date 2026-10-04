@@ -3,28 +3,23 @@
   
   <!-- Page d'accueil -->
   <url>
-    <loc>https://koffiolivierhounkpe.site.je/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <loc>https://koffiolivierhounkpe.onghlemi.org/</loc>
+    <lastmod>2026-10-04</lastmod>
     <priority>1.00</priority>
   </url>
   
   <!-- Page principale du Blog -->
   <url>
-    <loc>https://koffiolivierhounkpe.site.je/blog.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <loc>https://koffiolivierhounkpe.onghlemi.org/blog.html</loc>
+    <lastmod>2026-10-04</lastmod>
     <priority>0.80</priority>
   </url>
   
   <!-- Premier article de Blog -->
   <url>
-    <loc>https://koffiolivierhounkpe.site.je/article-mediation-enfants.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>0.70</priority>
-  </url>
-    <url>
-    <loc>https://koffiolivierhounkpe.site.je/article-octobre-rose-cfao.html</loc>
+    <loc>https://koffiolivierhounkpe.onghlemi.org/article-octobre-rose-cfao.html</loc>
     <lastmod>2026-10-04</lastmod>
-    <priority>0.85</priority>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
