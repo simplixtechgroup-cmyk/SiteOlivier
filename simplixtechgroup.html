@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplix Tech Group | Votre Site Portfolio Pro (25.900 FCFA - 0F/an)</title>
+    <meta name="description" content="Offre spéciale : votre site vitrine professionnel d'autorité à 25.900 FCFA au lieu de 100.000 FCFA. Zéro frais annuel. Payable en 3 tranches de 8.650 FCFA.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1E3A8A',
+                            navy: '#0F172A',
+                            gold: '#D97706',
+                            goldLight: '#F59E0B',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glow-gold { box-shadow: 0 0 45px -10px rgba(217, 119, 6, 0.25); }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white pb-16 sm:pb-0">
+
+    <!-- ================= BARRE FLOTTANTE MOBILE (CTA PERMANENT) ================= -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 flex items-center justify-between sm:hidden shadow-2xl">
+        <div>
+            <span class="text-[10px] text-slate-400 uppercase font-bold tracking-wider block">Offre Lancement</span>
+            <span class="text-sm font-black text-amber-600">25.900 F <span class="text-[10px] text-slate-500 font-medium">(ou 3x 8.650 F)</span></span>
+        </div>
+        <a href="#commander" class="px-5 py-2.5 rounded-xl bg-brand-blue text-white font-extrabold text-xs shadow-md flex items-center gap-1.5">
+            <span>Commander</span> <i class="fas fa-arrow-down text-[10px]"></i>
+        </a>
+    </div>
+
+    <!-- ================= TOP BANDEAU CHOC ================= -->
+    <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-extrabold text-xs sm:text-sm py-2 px-4 text-center tracking-wide shadow-sm">
+        🔥 OFFRE EXCLUSIVE : Votre site professionnel à 25.900 FCFA au lieu de <span class="line-through">100.000 FCFA</span> • 0 FCFA/an d'hébergement • Payable en 3 tranches !
+    </div>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-40">
+        <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-amber-500 flex items-center justify-center font-black text-white text-xl shadow-md">
+                S
+            </div>
+            <div>
+                <span class="text-lg sm:text-xl font-extrabold tracking-tight text-brand-navy block">Simplix Tech</span>
+                <span class="text-[9px] text-brand-gold font-bold tracking-widest uppercase block -mt-1">Digital Agency</span>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <a href="#commander" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-brand-blue hover:bg-blue-900 text-white font-bold text-xs tracking-wide transition shadow-md">
+                Commander (-74%)
+            </a>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION (TRAITEMENT DIFFÉRENCIÉ MOBILE / DESKTOP) ================= -->
+    <header class="relative min-h-[85vh] lg:min-h-[88vh] flex items-center overflow-hidden border-b border-slate-200 bg-brand-light">
+        
+        <!-- 1. PHOTO DE FOND : VISIBLE UNIQUEMENT SUR ORDINATEUR (LG) -->
+        <div class="hidden lg:block absolute inset-0 -z-0">
+            <img src="simplix-hero.jpg" 
+                 alt="Professionnelle devant son site web" 
+                 class="w-full h-full object-cover object-right"
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1600&q=80';">
+            <!-- Dégradé blanc élégant vers la gauche -->
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/10"></div>
+        </div>
+
+        <!-- 2. CONTENU PRINCIPAL -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 w-full">
+            <div class="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
+                
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-brand-blue text-xs font-bold mb-5 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                    Création de Sites Web d'Autorité pour Professionnels
+                </div>
+
+                <!-- Grand Titre -->
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-brand-navy leading-tight tracking-tight mb-4">
+                    Donnez à votre profil le <span class="text-brand-blue underline decoration-amber-400 decoration-wavy decoration-2">standing digital</span> qu'il mérite.
+                </h1>
+
+                <!-- Sous-titre -->
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                    Consultants, médecins, juristes, cadres, formateurs ou dirigeants d'ONG : vos partenaires et recruteurs vous jugent en quelques secondes sur Internet. Ne vous contentez plus d'un simple CV papier.
+                </p>
+
+                <!-- 3. CARTE PHOTO DÉDIÉE SUR MOBILE (LA "BELLE VUE" NETTE ET VALORISANTE) -->
+                <div class="block lg:hidden my-6 relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[16/10] max-w-md mx-auto">
+                    <img src="simplix-hero.jpg" 
+                         alt="Professionnelle avec son site" 
+                         class="w-full h-full object-cover object-top"
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="text-xs font-bold text-white flex items-center gap-2 drop-shadow">
+                            <i class="fas fa-check-circle text-amber-400"></i> Une vitrine moderne qui inspire le respect
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Bloc Prix Choc -->
+                <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl mb-6 inline-block w-full max-w-md text-left">
+                    <div class="flex items-center justify-between gap-4 border-b border-slate-100 pb-3 mb-3">
+                        <div>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tarif Promotionnel</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-3xl sm:text-4xl font-black text-amber-600">25.900 FCFA</span>
+                                <span class="text-slate-400 line-through text-base font-semibold">100.000 F</span>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-black bg-emerald-100 text-emerald-700">
+                            -74% DE RÉDUCTION
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600 font-medium">
+                        <span class="flex items-center gap-1.5 text-emerald-600 font-bold">
+                            <i class="fas fa-check-circle"></i> 0 FCFA/an d'hébergement
+                        </span>
+                        <span class="bg-slate-100 px-2 py-1 rounded text-slate-700 font-semibold inline-block w-fit">
+                            Payable en 3x 8.650 FCFA
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Compte à rebours -->
+                <div class="flex items-center justify-center lg:justify-start gap-3 mb-6 text-xs font-semibold text-slate-600">
+                    <span><i class="fas fa-stopwatch text-amber-500 mr-1"></i> Fin de la promotion dans :</span>
+                    <div class="flex items-center gap-1 font-mono font-bold text-slate-900 text-sm">
+                        <span id="countdown-hours" class="bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">05</span>:
+                        <span id="countdown-minutes" class="bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">38</span>:
+                        <span id="countdown-seconds" class="bg-slate-100 border border-slate-200 px-2 py-0.5 rounded text-amber-600">14</span>
+                    </div>
+                </div>
+
+                <!-- Bouton d'action -->
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                    <a href="#commander" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-blue hover:bg-blue-900 text-white font-extrabold text-base tracking-wide transition shadow-xl shadow-blue-900/20 flex items-center justify-center gap-2">
+                        <span>Réserver mon site à 25.900 F</span>
+                        <i class="fas fa-arrow-down text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= LES 3 ARGUMENTS SANS BLABLA ================= -->
+    <section class="bg-white py-14 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-brand-light border border-slate-200">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-lg mb-4 font-bold">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brand-navy mb-2">0 FCFA d'abonnement par an</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Fini les renouvellements annuels à 40.000 ou 60.000 FCFA. Votre site est configuré sur une infrastructure sans frais récurrents. Vous payez une seule fois.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-light border border-slate-200">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-lg mb-4 font-bold">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brand-navy mb-2">Payable en 3 tranches</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Ne prenez aucun risque financier : démarrez avec un acompte de <strong>8.650 FCFA</strong>. Les deux tranches restantes ne sont réglées qu'au fur et à mesure de votre satisfaction.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-brand-light border border-slate-200">
+                    <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-brand-blue flex items-center justify-center text-lg mb-4 font-bold">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-brand-navy mb-2">Google SEO & Réseaux Sociaux</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Déclaration officielle sur Google Search Console pour être trouvable en ligne, et configuration de votre photo pour chaque partage sur WhatsApp et LinkedIn.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CTA rapide -->
+            <div class="text-center mt-10">
+                <a href="#commander" class="inline-flex items-center gap-2 text-sm font-extrabold text-brand-blue hover:text-amber-600 transition">
+                    <span>Profiter de l'offre et commander en 30 secondes</span> <i class="fas fa-arrow-down text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LE FORMULAIRE DE COMMANDE (EN MILIEU DE PAGE) ================= -->
+    <section id="commander" class="py-16 max-w-2xl mx-auto px-4">
+        
+        <div class="bg-white p-6 sm:p-10 rounded-3xl border-2 border-amber-400/80 shadow-2xl relative glow-gold">
+            
+            <div class="text-center mb-8 pb-5 border-b border-slate-100">
+                <span class="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-1">Bon de Commande Sécurisé</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">Commandez Votre Site (25.900 F)</h2>
+                <p class="text-xs text-slate-500 mt-1">Remplissez ces 3 informations. Votre commande est transmise par e-mail et validée instantanément sur WhatsApp.</p>
+            </div>
+
+            <form id="order-form" onsubmit="submitOrderForm(event)" class="space-y-4 text-left">
+                
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wide">Votre Nom et Prénoms *</label>
+                    <input type="text" id="client-name" required placeholder="Ex: Dr Dossou KPATINVO" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-brand-blue focus:bg-white transition placeholder:text-slate-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wide">Votre Numéro WhatsApp *</label>
+                    <input type="tel" id="client-phone" required placeholder="Ex: +229 01 00 00 00 00" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-brand-blue focus:bg-white transition placeholder:text-slate-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wide">Votre Métier / Activité *</label>
+                    <input type="text" id="client-job" required placeholder="Ex: Consultant, Médecin, DG d'ONG, Juriste, Assistant Social..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-brand-blue focus:bg-white transition placeholder:text-slate-400">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wide">Modalité de paiement souhaitée</label>
+                    <select id="client-payment" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-brand-blue focus:bg-white transition cursor-pointer">
+                        <option value="Paiement en 3 tranches de 8.650 FCFA">Paiement en 3 tranches de 8.650 FCFA (Recommandé)</option>
+                        <option value="Paiement comptant de 25.900 FCFA">Paiement comptant : 25.900 FCFA</option>
+                    </select>
+                </div>
+
+                <div class="pt-3">
+                    <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl bg-brand-blue hover:bg-blue-900 text-white font-extrabold text-base tracking-wide transition shadow-xl shadow-blue-900/20 flex items-center justify-center gap-2 cursor-pointer">
+                        <span>Valider ma commande & Lancer mon site</span>
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </button>
+                    
+                    <div class="flex items-center justify-center gap-2 text-[11px] text-slate-500 text-center mt-3">
+                        <i class="fas fa-shield-alt text-amber-500"></i>
+                        <span>Acompte de 8.650 FCFA au démarrage • Solde à la satisfaction</span>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= 1. TÉMOIGNAGES / RETOURS CLIENTS (AVANT LA DÉMO) ================= -->
+    <section class="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200">
+        <div class="text-center mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-gold block mb-2">Avis vérifiés</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">Ce que disent ceux qui ont franchi le pas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Témoignage 1 -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4 italic">
+                        « Avant, j'envoyais mon CV en PDF qui se perdait dans les boîtes mail. Maintenant, j'envoie mon lien sur WhatsApp, les bailleurs voient mes missions et mes références tout de suite. Ça change tout. »
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <strong class="text-xs font-bold text-brand-navy block">Dr Patrick A.</strong>
+                    <span class="text-[11px] text-slate-400">Consultant en Santé Publique</span>
+                </div>
+            </div>
+
+            <!-- Témoignage 2 -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4 italic">
+                        « Le fait de ne rien payer par an (0 FCFA/an) et de pouvoir régler en 3 tranches m'a totalement rassurée. Le site est propre, rapide et valorise mes diplômes. »
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <strong class="text-xs font-bold text-brand-navy block">Mme Amina T.</strong>
+                    <span class="text-[11px] text-slate-400">Directrice d'Association & Juriste</span>
+                </div>
+            </div>
+
+            <!-- Témoignage 3 -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4 italic">
+                        « Dès que je partage mon lien sur WhatsApp, ma photo et mon titre s'affichent automatiquement. J'ai décroché deux contrats d'animation le mois suivant la publication. »
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-slate-100">
+                    <strong class="text-xs font-bold text-brand-navy block">Marc K.</strong>
+                    <span class="text-[11px] text-slate-400">Expert-Formateur Indépendant</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= 2. SECTION DÉMO STRATÉGIQUE (VERS LA FIN) ================= -->
+    <section class="bg-slate-100 py-16 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="w-14 h-14 rounded-2xl bg-brand-blue text-white flex items-center justify-center text-xl mx-auto mb-4 shadow-md">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-gold block mb-2">Preuve concrète</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mb-4">
+                Pas encore convaincu ? Testez un site réel en direct.
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed mb-8">
+                Découvrez la fluidité, le carrousel narratif et la mise en page d'un portfolio complet réalisé par notre équipe :
+            </p>
+
+            <!-- Bouton Démo VISIBLE SUR MOBILE & PC -->
+            <a href="index.html" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-extrabold text-sm sm:text-base transition-all duration-300 shadow-md">
+                <i class="fas fa-external-link-alt text-xs"></i>
+                <span>Visiter un exemple de site en direct (Démo)</span>
+            </a>
+
+            <div class="mt-8">
+                <a href="#commander" class="text-xs font-bold text-amber-600 hover:underline">
+                    Convaincu ? Remonter au bon de commande à 25.900 F ↑
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white border-t border-slate-200 py-10 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="font-extrabold text-brand-navy text-sm">
+                Simplix Tech Group • Agence Digitale
+            </div>
+            <p>Email : <a href="mailto:simplictechgroup@gmail.com" class="text-brand-blue underline font-semibold">simplictechgroup@gmail.com</a> • Infoline / WhatsApp : +229 01 28 82 18 18</p>
+            <p class="text-slate-400 pt-2">&copy; 2026 Simplix Tech Group. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script>
+        // 1. DÉCOMPTE EVERGREEN
+        (function() {
+            const TIMER_DURATION_MS = (5 * 3600 + 38 * 60 + 14) * 1000;
+            const STORAGE_KEY = 'simplix_promo_25900_v4';
+
+            let deadline = localStorage.getItem(STORAGE_KEY);
+            if (!deadline || Date.now() > parseInt(deadline)) {
+                deadline = Date.now() + TIMER_DURATION_MS;
+                localStorage.setItem(STORAGE_KEY, deadline);
+            }
+
+            function updateTimer() {
+                const now = Date.now();
+                let remaining = parseInt(deadline) - now;
+
+                if (remaining <= 0) {
+                    deadline = Date.now() + TIMER_DURATION_MS;
+                    localStorage.setItem(STORAGE_KEY, deadline);
+                    remaining = TIMER_DURATION_MS;
+                }
+
+                const hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((remaining / (1000 * 60)) % 60);
+                const seconds = Math.floor((remaining / 1000) % 60);
+
+                const elH = document.getElementById('countdown-hours');
+                const elM = document.getElementById('countdown-minutes');
+                const elS = document.getElementById('countdown-seconds');
+
+                if (elH) elH.textContent = String(hours).padStart(2, '0');
+                if (elM) elM.textContent = String(minutes).padStart(2, '0');
+                if (elS) elS.textContent = String(seconds).padStart(2, '0');
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        })();
+
+        // 2. SOUMISSION FLUIDE : ENVOI SILENCIEUX GMAIL + REDIRECTION WHATSAPP IMMÉDIATE
+        function submitOrderForm(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submit-btn');
+            const name = document.getElementById('client-name').value.trim();
+            const phone = document.getElementById('client-phone').value.trim();
+            const job = document.getElementById('client-job').value.trim();
+            const payment = document.getElementById('client-payment').value;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Préparation de votre commande...';
+
+            const waMessage = `*COMMANDE SITE PORTFOLIO (25.900 FCFA)*%0A%0A` +
+                              `👤 *Nom :* ${encodeURIComponent(name)}%0A` +
+                              `📞 *WhatsApp :* ${encodeURIComponent(phone)}%0A` +
+                              `💼 *Activité :* ${encodeURIComponent(job)}%0A` +
+                              `💳 *Modalité :* ${encodeURIComponent(payment)}%0A%0A` +
+                              `Bonjour Simplix Tech, je viens de valider mon bon de commande et souhaite lancer la création de mon site !`;
+
+            const waUrl = `https://wa.me/2290128821818?text=${waMessage}`;
+
+            // Envoi par email
+            fetch("https://formsubmit.co/ajax/simplictechgroup@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    "Nom et Prénoms": name,
+                    "WhatsApp Client": phone,
+                    "Métier / Activité": job,
+                    "Formule de Paiement": payment,
+                    "_subject": `🔥 COMMANDE SITE (25.900 F) : ${name}`,
+                    "_template": "table"
+                }),
+                keepalive: true
+            }).catch(err => console.log("Notification envoyée"));
+
+            // Redirection WhatsApp
+            setTimeout(() => {
+                window.location.href = waUrl;
+            }, 400);
+        }
+    </script>
+</body>
+</html>

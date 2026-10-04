@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octobre Rose chez CFAO Green Infra | Koffi Olivier HOUNKPE</title>
+    <meta name="description" content="Retour sur l'atelier de sensibilisation au cancer du sein chez CFAO Green Infra co-animé par Koffi Olivier HOUNKPE (Assistant Social) et le Dr Ingrid ALOMA.">
+    
+    <!-- Open Graph (Partage Réseaux Sociaux) -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Octobre Rose chez CFAO Green Infra : Briser les tabous et agir tôt">
+    <meta property="og:description" content="Retour sur l'atelier de sensibilisation co-animé par Koffi Olivier HOUNKPE (Assistant Social) et le Dr Ingrid ALOMA.">
+    <meta property="og:image" content="https://koffiolivierhounkpe.site.je/cfao-cover.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="logo.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { blue: '#1E3A8A', gold: '#D97706', light: '#F8FAFC' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-brand-light text-gray-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+                    <div class="h-11 px-3 py-1 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center flex-shrink-0">
+                        <img src="logo.jpg" alt="Logo KH" class="h-full w-auto max-h-8 object-contain" onerror="this.onerror=null; this.src='logo.png';">
+                    </div>
+                    <span class="font-serif font-bold text-base sm:text-lg text-brand-blue tracking-tight">Koffi Olivier HOUNKPE</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-3 lg:space-x-6">
+                    <a href="index.html#competences" class="text-xs lg:text-sm font-medium text-gray-600 hover:text-brand-gold transition">Expertises</a>
+                    <a href="index.html#certifications" class="text-xs lg:text-sm font-medium text-gray-600 hover:text-brand-gold transition">Diplômes</a>
+                    <a href="index.html#parcours" class="text-xs lg:text-sm font-medium text-gray-600 hover:text-brand-gold transition">Parcours</a>
+                    <a href="index.html#portfolio" class="text-xs lg:text-sm font-medium text-gray-600 hover:text-brand-gold transition">Réalisations</a>
+                    <a href="blog.html" class="text-xs lg:text-sm font-bold text-brand-gold transition border-b-2 border-brand-gold pb-0.5">Blog</a>
+                    <a href="index.html#contact" class="px-4 py-2 bg-brand-blue text-white text-xs lg:text-sm font-medium rounded-md hover:bg-blue-950 transition shadow-md">Me Contacter</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= EN-TÊTE ARTICLE ================= -->
+    <header class="pt-32 pb-8 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Fil d'Ariane -->
+            <div class="flex items-center gap-2 text-xs text-gray-500 mb-6">
+                <a href="index.html" class="hover:text-brand-gold transition">Accueil</a>
+                <span>/</span>
+                <a href="blog.html" class="hover:text-brand-gold transition">Blog</a>
+                <span>/</span>
+                <span class="text-brand-gold font-medium">Santé & QVT</span>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-bold mb-4 border border-rose-200">
+                <i class="fas fa-ribbon text-rose-500"></i> Octobre Rose • Santé & Qualité de Vie au Travail (QVT)
+            </div>
+
+            <h1 class="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-brand-blue mb-4 leading-tight">
+                Octobre Rose chez CFAO Green Infra : Briser les tabous, déconstruire les peurs et agir tôt
+            </h1>
+
+            <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+                Retour sur l’atelier officiel de sensibilisation co-animé par <strong>Koffi Olivier HOUNKPE</strong> (Assistant Social) et le <strong>Dr Ingrid ALOMA</strong> (Médecin) dans le cadre de la campagne <em>Health by CFAO</em>.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500 pt-4 border-t border-gray-100">
+                <span><i class="far fa-calendar-alt text-brand-gold mr-1.5"></i> Vendredi 02 octobre 2026</span>
+                <span>•</span>
+                <span><i class="fas fa-map-marker-alt text-brand-gold mr-1.5"></i> CFAO Green Infra, Cotonou</span>
+                <span>•</span>
+                <span><i class="far fa-clock text-brand-gold mr-1.5"></i> 7 min de lecture</span>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= CONTENU PRINCIPAL ================= -->
+    <main class="py-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- ================= EMPLACEMENT PHOTO 1 : COUVERTURE PRINCIPALE ================= -->
+        <figure class="mb-10">
+            <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-slate-100">
+                <img src="cfao-cover.jpg" 
+                     alt="Atelier Octobre Rose chez CFAO Green Infra" 
+                     class="w-full h-full object-cover" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80';">
+            </div>
+            <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
+                Vue générale de la session de sensibilisation « Health by CFAO » dans les locaux de CFAO Green Infra à Cotonou.
+            </figcaption>
+        </figure>
+
+        <!-- Fiche descriptive "En un coup d'œil" -->
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 mb-10 shadow-sm">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-4 flex items-center gap-2">
+                <i class="fas fa-clipboard-check"></i> En un coup d’œil : Fiche de l'intervention
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+                <div>
+                    <span class="text-gray-400 block text-xs">Organisation hôte :</span>
+                    <strong class="text-brand-blue">CFAO Green Infra (Programme Health by CFAO)</strong>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Partenaire prévention :</span>
+                    <strong class="text-brand-blue">Gracial Emver Prévention</strong>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Thème officiel :</span>
+                    <span class="text-gray-700 italic">« Cancer du sein : briser les tabous, agir tôt, sauver des vies »</span>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Animation conjointe :</span>
+                    <strong class="text-gray-800">Koffi Olivier HOUNKPE & Dr Ingrid ALOMA</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corps de l'article -->
+        <div class="text-gray-700 text-base sm:text-lg leading-relaxed space-y-8">
+            
+            <!-- Section 1 -->
+            <section>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-brand-blue mb-4">
+                    1. Le Contexte : Pourquoi porter ce sujet au sein de CFAO Green Infra ?
+                </h2>
+                <p>
+                    Le cancer du sein demeure le cancer le plus fréquent chez la femme à l'échelle planétaire et la première cause de mortalité féminine par cancer, avec <strong>2,3 millions de nouveaux cas diagnostiqués chaque année [1]</strong>. Au cours de son existence, <strong>1 femme sur 8 sera concernée [2]</strong>.
+                </p>
+                <p class="mt-4">
+                    Pourtant, un message d’espoir fondamental doit guider toute démarche de sensibilisation en entreprise : détecté à un stade précoce (tumeur inférieure à 2 cm), le cancer du sein se guérit dans <strong>plus de 90 % des cas [3]</strong>. Ce taux atteint même <strong>99 % de survie à 5 ans</strong> pour une lésion diagnostiquée à moins de 1 cm [4], grâce à des thérapeutiques moins lourdes et conservatrices.
+                </p>
+                
+                <div class="my-6 p-5 border-l-4 border-brand-gold bg-amber-50/60 rounded-r-xl italic text-gray-700 text-base">
+                    « À l'occasion de la campagne officielle Health by CFAO, l'enjeu ne se limitait pas à un exposé théorique. Il s'agissait de lever le voile sur les freins invisibles qui retardent l'accès aux soins. En tant qu'Assistant Social, mon rôle aux côtés du Dr Ingrid ALOMA a été d'adresser en priorité la dimension humaine, psychologique et culturelle du dépistage. »
+                </div>
+            </section>
+
+            <!-- ================= EMPLACEMENT PHOTO 2 : LE TANDEM MÉDICO-SOCIAL ================= -->
+            <figure class="my-8">
+                <div class="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                    <img src="cfao-animation.jpg" 
+                         alt="Animation conjointe Koffi Olivier HOUNKPE et Dr Ingrid ALOMA" 
+                         class="w-full h-full object-cover" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=80';">
+                </div>
+                <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
+                    Co-animation de la session : Koffi Olivier HOUNKPE (Assistant Social) et le Dr Ingrid ALOMA (Médecin) unissent leurs approches devant les équipes.
+                </figcaption>
+            </figure>
+
+            <!-- Section 2 -->
+            <section>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-brand-blue mb-4">
+                    2. Partie 1 (Animation Sociale) : Déconstruire les résistances invisibles
+                </h2>
+                <p class="font-medium text-gray-800">
+                    Le constat de départ est sans appel : près de <strong>68 % des retards de consultation</strong> sont imputables à la peur, au déni et aux fausses croyances plutôt qu'à l'absence d'infrastructures de soins [5].
+                </p>
+
+                <div class="space-y-6 mt-6">
+                    <div class="p-5 rounded-xl bg-white border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-brand-blue mb-2 flex items-center gap-2">
+                            <i class="fas fa-exclamation-triangle text-amber-500"></i> Le piège du déni et l'illusion d'être à l'abri
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• <strong>« Je ne ressens rien, je suis en pleine forme » :</strong> Rappel que 95 % des tumeurs débutantes ne provoquent aucune douleur [6]. Attendre un symptôme douloureux est un piège.</li>
+                            <li>• <strong>« Il n'y a aucun antécédent dans ma famille » :</strong> 85 % des cancers du sein sont sporadiques et surviennent sans antécédent familial connu (les mutations génétiques héréditaires ne pèsent que 5 à 10 %) [7].</li>
+                            <li>• <strong>La peur du diagnostic :</strong> Fuir l'examen par anxiété entraîne un retard moyen de consultation de 6 mois [8], réduisant drastiquement les chances de traitement doux.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-white border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-brand-blue mb-2 flex items-center gap-2">
+                            <i class="fas fa-shield-alt text-brand-gold"></i> Les barrières socioculturelles et la pudeur
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• <strong>Croyances mystiques :</strong> Assimiler la maladie à une malédiction conduit à des pertes de temps critiques vers des décoctions artisanales dont l'efficacité antitumorale est nulle (0 %) [9], alors qu'il s'agit d'une anomalie purement biologique.</li>
+                            <li>• <strong>Pudeur :</strong> La réticence à dénuder sa poitrine devant un soignant fait perdre des mois précieux. Un examen clinique dure à peine 15 minutes, dans le strict respect de la confidentialité et de la dignité.</li>
+                            <li>• <strong>Crainte de l'abandon :</strong> Aujourd'hui, 80 % des chirurgies conservent le sein entier (tumorectomies) [10] lorsque le dépistage est précoce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-white border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-brand-blue mb-2 flex items-center gap-2">
+                            <i class="fas fa-male text-blue-600"></i> Le rôle déterminant des hommes en entreprise
+                        </h3>
+                        <p class="text-sm text-gray-600">
+                            La lutte contre le cancer du sein n'est pas qu'une affaire de femmes. L'implication du conjoint augmente de <strong>+45 % l'adhésion au dépistage [12]</strong>. Les managers ont également un rôle clé pour accorder les autorisations d'absence pour les consultations sans friction. Enfin, les hommes possèdent une glande mammaire et représentent environ 1 % des diagnostics [13].
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= EMPLACEMENT PHOTO 3 : AUDITOIRE & ÉCHANGES ================= -->
+            <figure class="my-8">
+                <div class="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                    <img src="cfao-participants.jpg" 
+                         alt="Collaborateurs et collaboratrices attentifs lors de l'atelier" 
+                         class="w-full h-full object-cover" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80';">
+                </div>
+                <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
+                    Un auditoire captivé et engagé : libération de la parole et questions directes des collaborateurs de CFAO Green Infra.
+                </figcaption>
+            </figure>
+
+            <!-- Section 3 -->
+            <section>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-brand-blue mb-4">
+                    3. Partie 2 (Axe Médical) : L'éclairage clinique du Dr Ingrid ALOMA
+                </h2>
+                <p>
+                    Pour compléter cette déconstruction des freins psychosociaux, le Dr Ingrid ALOMA a partagé les repères biomédicaux fondamentaux :
+                </p>
+                
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 space-y-4 text-sm text-gray-600 mt-4">
+                    <p>
+                        • <strong>La fenêtre d'opportunité :</strong> Il faut en moyenne 1 à 5 ans pour qu'une cellule initiale évolue en un nodule d'un centimètre [14]. C'est une opportunité majeure si les bilans sont annuels.
+                    </p>
+                    <p>
+                        • <strong>Les facteurs évitables :</strong> 30 % des cancers du sein sont évitables en modifiant les habitudes de vie [15] (activité physique régulière, équilibre pondéral, réduction drastique de l'alcool et du tabac).
+                    </p>
+                    <div class="p-4 bg-blue-50/60 rounded-xl border border-blue-100">
+                        <strong class="text-brand-blue block mb-1">L'autopalpation mensuelle en 3 gestes :</strong>
+                        1. <em>Regarder</em> (recherche d'asymétrie, peau d'orange, rétraction) ;<br>
+                        2. <em>Palper</em> (avec la pulpe des 3 doigts, en cercles concentriques jusqu'à l'aisselle) ;<br>
+                        3. <em>Comprimer</em> (vérification de l'absence d'écoulement du mamelon).
+                    </div>
+                    <p class="italic text-gray-700">
+                        • <strong>Dédramatiser la palpation :</strong> 80 % des anomalies ou boules palpées s'avèrent totalement bénignes (kystes bénins, adénofibromes) [16]. Consulter ne veut pas dire être malade, mais vérifier pour se libérer de l'angoisse.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section>
+                <h2 class="text-xl sm:text-2xl font-serif font-bold text-brand-blue mb-4">
+                    4. Bilan & Enseignements professionnels
+                </h2>
+                <p>
+                    Cette intervention au sein des équipes de CFAO Green Infra a consolidé une conviction centrale de ma pratique :
+                </p>
+                <ul class="space-y-3 mt-4 text-sm text-gray-700">
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-check-circle text-brand-gold mt-1"></i>
+                        <span><strong>La force du tandem médico-social :</strong> Le médecin garantit la rigueur clinique ; l'assistant social identifie et lève les freins psychologiques et organisationnels qui bloquent l'accès aux soins.</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <i class="fas fa-check-circle text-brand-gold mt-1"></i>
+                        <span><strong>L'entreprise comme espace de santé publique :</strong> Informer les salariés sur leur lieu de travail génère un réflexe protecteur qui s'étend ensuite à leurs familles et à leurs quartiers.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ================= EMPLACEMENT PHOTO 4 : PHOTO DE GROUPE & CLÔTURE ================= -->
+            <figure class="my-8">
+                <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                    <img src="cfao-groupe.jpg" 
+                         alt="Photo de groupe clôture de l'atelier CFAO Green Infra" 
+                         class="w-full h-full object-cover" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80';">
+                </div>
+                <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
+                    Clôture de l'atelier : engagement collectif des équipes et de la direction de CFAO Green Infra autour de la campagne Health by CFAO.
+                </figcaption>
+            </figure>
+
+            <!-- Section Références Scientifiques Complètes -->
+            <section class="mt-12 pt-8 border-t border-gray-200">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
+                    <i class="fas fa-book"></i> Références & Sources scientifiques
+                </h3>
+                <div class="space-y-2 text-xs text-gray-500 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                    <p>[1] OMS / CIRC (IARC) : GLOBOCAN – Global Cancer Observatory (2,3 millions de cas annuels).</p>
+                    <p>[2] Institut National du Cancer (INCa) : Épidémiologie des cancers féminins (probabilité cumulée 1 femme sur 8).</p>
+                    <p>[3] CIRC / OMS & INCa : Survie nette standardisée à 5 ans supérieure à 90 % pour les stades précoces.</p>
+                    <p>[4] American Cancer Society (ACS) / SEER : Taux de survie à 5 ans approchant 99 % pour les lésions < 1 cm.</p>
+                    <p>[5] BMC Public Health / WHO Guidelines : Déterminants du Patient Delay dans les pays émergents et en entreprise.</p>
+                    <p>[6] Haute Autorité de Santé (HAS) / SFSPM : Absence de douleur dans plus de 90 % des tumeurs débutantes.</p>
+                    <p>[7] INCa : Facteurs héréditaires (BRCA1/2 ne représentent que 5 à 10 % des situations diagnostiquées).</p>
+                    <p>[8] Journal of Psychosocial Oncology : Délais pré-diagnostiques moyens constatés lors d'évitement anxieux.</p>
+                    <p>[9] ASCO / ESMO : Absence formelle d'efficacité antitumorale des décoctions artisanales contre la prolifération maligne.</p>
+                    <p>[10] Registres sénologiques : Près de 80 % de chirurgies conservatrices (tumorectomies) lors de diagnostic précoce.</p>
+                    <p>[11] Recommandations de dépistage clinique annuel : Protocole d'examen bilatéral et entretien médical (15-30 min).</p>
+                    <p>[12] Social Science & Medicine : Impact de l'adhésion du conjoint (+45 %) sur le recours au dépistage.</p>
+                    <p>[13] ACS & INCa : Prévalence du cancer du sein chez l'homme (~1 % des cas totaux recensés).</p>
+                    <p>[14] Cinétique tumorale sénologique : Temps d'évolution infraclinique d'une cellule néoplasique vers le nodule de 1 cm.</p>
+                    <p>[15] WCRF / AICR & CIRC : Prévention primaire et réduction d'un tiers (30 %) des risques par l'hygiène de vie.</p>
+                    <p>[16] CNGOF : Données épidémiologiques sur la bénignité (80 %) des masses et kystes mammaires palpés.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Encadré Auteur & Appel à l'action Entreprise -->
+        <div class="mt-14 p-8 rounded-2xl bg-gradient-to-br from-brand-blue to-blue-950 text-white shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="max-w-xl text-center sm:text-left">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-wider block mb-1">Qualité de Vie au Travail (QVT)</span>
+                <h3 class="text-xl font-bold font-serif mb-2">Besoin d'animer une action de santé dans votre organisation ?</h3>
+                <p class="text-blue-200 text-xs sm:text-sm leading-relaxed">
+                    Prévention des risques, accompagnement social des collaborateurs, ateliers QVT : j'interviens au sein de vos équipes pour déployer des actions concrètes et adaptées à vos réalités.
+                </p>
+            </div>
+            <a href="index.html#contact" class="px-6 py-3.5 bg-brand-gold text-gray-900 font-bold rounded-xl hover:bg-amber-400 transition text-sm flex-shrink-0 shadow-lg">
+                Organiser un atelier →
+            </a>
+        </div>
+
+        <!-- Retour au blog -->
+        <div class="mt-10 text-center">
+            <a href="blog.html" class="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-brand-gold transition">
+                <i class="fas fa-arrow-left text-xs"></i> Retourner à l'espace Publications & Retours d'expérience
+            </a>
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Koffi Olivier HOUNKPE. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
