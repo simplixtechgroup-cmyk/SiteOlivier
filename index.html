@@ -838,11 +838,11 @@
             function updateSlide(index) {
                 heroSlides.forEach((slide, i) => {
                     if (i === index) {
-                        slide.classList.remove('opacity-0', 'pointer-events-none');
+                        slide.classList.remove('opacity-0', 'pointer-events-none', 'invisible');
                         slide.classList.add('opacity-100', 'visible');
                     } else {
                         slide.classList.remove('opacity-100', 'visible');
-                        slide.classList.add('opacity-0', 'pointer-events-none');
+                        slide.classList.add('opacity-0', 'pointer-events-none', 'invisible');
                     }
                 });
 
@@ -859,7 +859,7 @@
                 });
                 currentIndex = index;
             }
-
+            
             function startTimer() {
                 stopTimer();
                 if (!isAutoPlaying) return;
@@ -896,7 +896,29 @@
             startTimer();
         })();
 
-        // 3. AFFICHER / MASQUER PARCOURS
+        // 3. AFFICHER / MASQUER CERTIFICATIONS
+        function toggleCertificates() {
+            const extraContainer = document.getElementById('extra-certificates');
+            const btnText = document.getElementById('toggle-certs-text');
+            const btnIcon = document.getElementById('toggle-certs-icon');
+
+            if (extraContainer) {
+                if (extraContainer.classList.contains('hidden')) {
+                    extraContainer.classList.remove('hidden');
+                    if (btnText) btnText.textContent = "Réduire l'affichage";
+                    if (btnIcon) { btnIcon.classList.remove('fa-chevron-down'); btnIcon.classList.add('fa-chevron-up'); }
+                } else {
+                    extraContainer.classList.add('hidden');
+                    if (btnText) btnText.textContent = "Afficher toutes les certifications (7)";
+                    if (btnIcon) { btnIcon.classList.remove('fa-chevron-up'); btnIcon.classList.add('fa-chevron-down'); }
+                    const section = document.getElementById('certifications');
+                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
+        // 4. AFFICHER / MASQUER PARCOURS
+        
         function toggleParcours() {
             const extra = document.getElementById('extra-parcours');
             const text = document.getElementById('toggle-parcours-text');
@@ -917,7 +939,7 @@
             }
         }
 
-        // 4. GESTION DE LA VISIONNEUSE (LIGHTBOX)
+        // 5. GESTION DE LA VISIONNEUSE (LIGHTBOX)
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
