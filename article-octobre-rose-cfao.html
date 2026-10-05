@@ -6,15 +6,25 @@
     <title>Octobre Rose chez CFAO Green Infra | Koffi Olivier HOUNKPE</title>
     <meta name="description" content="Retour sur l'atelier de sensibilisation au cancer du sein chez CFAO Green Infra co-animé par Koffi Olivier HOUNKPE (Assistant Social) et le Dr Ingrid ALOMA.">
     
-    <!-- Open Graph (Partage Réseaux Sociaux) -->
+    <!-- ================= BALISES DE PARTAGE (OPEN GRAPH & TWITTER) ================= -->
     <meta property="og:type" content="article">
+    <meta property="og:url" content="https://koffiolivierhounkpe.onghlemi.org/article-octobre-rose-cfao.html">
     <meta property="og:title" content="Octobre Rose chez CFAO Green Infra : Briser les tabous et agir tôt">
     <meta property="og:description" content="Retour sur l'atelier de sensibilisation co-animé par Koffi Olivier HOUNKPE (Assistant Social) et le Dr Ingrid ALOMA.">
     <meta property="og:image" content="https://koffiolivierhounkpe.onghlemi.org/cfao-cover.jpg">
+    <meta property="og:image:secure_url" content="https://koffiolivierhounkpe.onghlemi.org/cfao-cover.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Octobre Rose chez CFAO Green Infra">
+    <meta name="twitter:description" content="Retour sur l'atelier de sensibilisation co-animé par Koffi Olivier HOUNKPE et le Dr Ingrid ALOMA.">
+    <meta name="twitter:image" content="https://koffiolivierhounkpe.onghlemi.org/cfao-cover.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="favicon.png">
-    <link rel="shortcut icon" type="image/jpeg" href="favicon.png">
+    <link rel="icon" type="image/png" href="logo-koffi-olivier.png">
+    <link rel="shortcut icon" type="image/png" href="logo-koffi-olivier.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -50,7 +60,7 @@
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center gap-3 cursor-pointer">
                     <div class="h-11 px-3 py-1 bg-white rounded-lg border border-gray-200 shadow-sm flex items-center justify-center flex-shrink-0">
-                        <img src="logo-koffi-olivier.png" alt="Logo KH" class="h-full w-auto max-h-8 object-contain" onerror="this.onerror=null; this.src='logo-koffi-olivier.png';">
+                        <img src="logo-koffi-olivier.png" alt="Logo KH" class="h-full w-auto max-h-8 object-contain" onerror="this.style.display='none';">
                     </div>
                     <span class="font-serif font-bold text-base sm:text-lg text-brand-blue tracking-tight">Koffi Olivier HOUNKPE</span>
                 </a>
@@ -105,18 +115,43 @@
     <!-- ================= CONTENU PRINCIPAL ================= -->
     <main class="py-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- ================= EMPLACEMENT PHOTO 1 : COUVERTURE PRINCIPALE ================= -->
+        <!-- ================= EMPLACEMENT PHOTO 1 : COUVERTURE PRINCIPALE (NON ROGNÉE) ================= -->
         <figure class="mb-10">
-            <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-slate-100">
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-slate-100 flex justify-center">
                 <img src="cfao-cover.jpg" 
                      alt="Atelier Octobre Rose chez CFAO Green Infra" 
-                     class="w-full h-full object-cover" 
+                     class="w-full h-auto max-h-[500px] object-contain" 
                      onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80';">
             </div>
             <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
                 Vue générale de la session de sensibilisation « Health by CFAO » dans les locaux de CFAO Green Infra à Cotonou.
             </figcaption>
         </figure>
+
+        <!-- Fiche descriptive "En un coup d'œil" -->
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 mb-10 shadow-sm">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-4 flex items-center gap-2">
+                <i class="fas fa-clipboard-check"></i> En un coup d’œil : Fiche de l'intervention
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+                <div>
+                    <span class="text-gray-400 block text-xs">Organisation hôte :</span>
+                    <strong class="text-brand-blue">CFAO Green Infra (Programme Health by CFAO)</strong>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Partenaire prévention :</span>
+                    <strong class="text-brand-blue">Gracial Emver Prévention</strong>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Thème officiel :</span>
+                    <span class="text-gray-700 italic">« Cancer du sein : briser les tabous, agir tôt, sauver des vies »</span>
+                </div>
+                <div>
+                    <span class="text-gray-400 block text-xs">Animation conjointe :</span>
+                    <strong class="text-gray-800">Koffi Olivier HOUNKPE & Dr Ingrid ALOMA</strong>
+                </div>
+            </div>
+        </div>
 
         <!-- Corps de l'article -->
         <div class="text-gray-700 text-base sm:text-lg leading-relaxed space-y-8">
@@ -138,12 +173,12 @@
                 </div>
             </section>
 
-            <!-- ================= EMPLACEMENT PHOTO 2 : LE TANDEM MÉDICO-SOCIAL ================= -->
+            <!-- ================= EMPLACEMENT PHOTO 2 : LE TANDEM MÉDICO-SOCIAL (NON ROGNÉE) ================= -->
             <figure class="my-8">
-                <div class="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100 flex justify-center">
                     <img src="cfao-animation.jpg" 
                          alt="Animation conjointe Koffi Olivier HOUNKPE et Dr Ingrid ALOMA" 
-                         class="w-full h-full object-cover" 
+                         class="w-full h-auto max-h-[500px] object-contain" 
                          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=80';">
                 </div>
                 <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
@@ -194,12 +229,12 @@
                 </div>
             </section>
 
-            <!-- ================= EMPLACEMENT PHOTO 3 : AUDITOIRE & ÉCHANGES ================= -->
+            <!-- ================= EMPLACEMENT PHOTO 3 : AUDITOIRE & ÉCHANGES (NON ROGNÉE) ================= -->
             <figure class="my-8">
-                <div class="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100 flex justify-center">
                     <img src="cfao-participants.jpg" 
                          alt="Collaborateurs et collaboratrices attentifs lors de l'atelier" 
-                         class="w-full h-full object-cover" 
+                         class="w-full h-auto max-h-[500px] object-contain" 
                          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80';">
                 </div>
                 <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
@@ -255,12 +290,12 @@
                 </ul>
             </section>
 
-            <!-- ================= EMPLACEMENT PHOTO 4 : PHOTO DE GROUPE & CLÔTURE ================= -->
+            <!-- ================= EMPLACEMENT PHOTO 4 : PHOTO DE GROUPE & CLÔTURE (NON ROGNÉE) ================= -->
             <figure class="my-8">
-                <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-slate-100 flex justify-center">
                     <img src="cfao-groupe.jpg" 
                          alt="Photo de groupe clôture de l'atelier CFAO Green Infra" 
-                         class="w-full h-full object-cover" 
+                         class="w-full h-auto max-h-[500px] object-contain" 
                          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80';">
                 </div>
                 <figcaption class="text-xs text-gray-500 text-center mt-2.5 italic">
